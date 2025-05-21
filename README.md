@@ -32,7 +32,7 @@ In this exercise you will:
 
 ## Tasks
 
-### Task 111: Local Git – Branching & Merging
+### Task 1: Local Git – Branching & Merging
 
 1. Create a new directory in your home directory and initialize a repository in it. 
 2. In one of your cloned repos, initialize a new branch called `feature-1`.
@@ -43,24 +43,13 @@ In this exercise you will:
 **Your Commands & Output**
 
 ```bash
-cd ~
-mkdir projet-git
-cd projet-git
-git init
-git checkout -b feature-1
-echo "Dieser Zweig hat eine neue Funktionalität." > feature.txt
-git add feature.txt
-git commit -m "führt im feature-1zweig feature.txt"
-git checkout main
-git checkout -b main
-git merge feature-1
-
-
+# Paste here the sequence of git commands you ran
+# and the relevant terminal output (e.g., branch listing, merge messages)
 ```
 
 ---
 
-### Task 222: Bare Repository on an SSH Server
+### Task 2: Bare Repository on an SSH Server
 
 1. On your SSH server (e.g., “vorlesungsserver”), create a **bare** repo at `~/repos/myproject.git`:
 
@@ -78,18 +67,12 @@ git merge feature-1
 **Your Commands & Output**
 
 ```bash
-PS C:\Users\manue> wsl
-manou@DESKTOP-O7NNAMU:/mnt/c/Users/manue$ cd ~/projet-git
-manou@DESKTOP-O7NNAMU:~/projet-git$ git remote add origin-ssh sshuser@192.168.0.101:/mnt/c/Users/sshuser/repos/myproject
-.git
-manou@DESKTOP-O7NNAMU:~/projet-git$ git push origin-ssh main
-sshuser@192.168.0.101's password:
-manou@DESKTOP-O7NNAMU:~/projet-git$
+# Paste here the push & clone commands and outputs
 ```
 
 ---
 
-### Task 333: GitHub & THGA GitLab
+### Task 3: GitHub & THGA GitLab
 
 1. On [GitHub](github.com), create a new empty repo under your account named `myproject-gh`.
 2. On [THGA GitLab](gitlab.thga.de), create a new project named `myproject-gl`.
@@ -106,23 +89,12 @@ manou@DESKTOP-O7NNAMU:~/projet-git$
 **Your Commands & Output**
 
 ```bash
-PS C:\Users\manue> wsl
-manou@DESKTOP-O7NNAMU:/mnt/c/Users/manue$ cd ~/projet-git
-manou@DESKTOP-O7NNAMU:~/projet-git$ git remote add origin-ssh sshuser@192.168.0.101:/mnt/c/Users/sshuser/repos/myproject
-.git
-manou@DESKTOP-O7NNAMU:~/projet-git$ git push origin-ssh main
-sshuser@192.168.0.101's password:
-manou@DESKTOP-O7NNAMU:~/projet-git$ git remote remove github
-git remote remove gitlab
-manou@DESKTOP-O7NNAMU:~/projet-git$ git remote add github git@github.com:ManoellaKouam/myproject-gh.git
-git remote add gitlab git@gitlab.thga.de:michelle.kouam-wogaing/myproject-gl.git
-manou@DESKTOP-O7NNAMU:~/projet-git$ git push github main
-git push gitlab main
+# Paste here the remote‐adding & push outputs
 ```
 
 ---
 
-### Task 444: Fork, Modify, and Pull/Merge Request
+### Task 4: Fork, Modify, and Pull/Merge Request
 
 1. On GitHub, **fork** one of the repos from the STEMgraph org.
 2. Clone your fork locally, create a branch `pp5-changes`, and make a small change (e.g., update the README).
