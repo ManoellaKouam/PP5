@@ -43,8 +43,19 @@ In this exercise you will:
 **Your Commands & Output**
 
 ```bash
-# Paste here the sequence of git commands you ran
-# and the relevant terminal output (e.g., branch listing, merge messages)
+cd ~
+mkdir projet-git
+cd projet-git
+git init
+git checkout -b feature-1
+echo "Dieser Zweig hat eine neue Funktionalität." > feature.txt
+git add feature.txt
+git commit -m "führt im feature-1zweig feature.txt"
+git checkout main
+git checkout -b main
+git merge feature-1
+
+
 ```
 
 ---
@@ -67,7 +78,13 @@ In this exercise you will:
 **Your Commands & Output**
 
 ```bash
-# Paste here the push & clone commands and outputs
+PS C:\Users\manue> wsl
+manou@DESKTOP-O7NNAMU:/mnt/c/Users/manue$ cd ~/projet-git
+manou@DESKTOP-O7NNAMU:~/projet-git$ git remote add origin-ssh sshuser@192.168.0.101:/mnt/c/Users/sshuser/repos/myproject
+.git
+manou@DESKTOP-O7NNAMU:~/projet-git$ git push origin-ssh main
+sshuser@192.168.0.101's password:
+manou@DESKTOP-O7NNAMU:~/projet-git$
 ```
 
 ---
@@ -89,7 +106,18 @@ In this exercise you will:
 **Your Commands & Output**
 
 ```bash
-# Paste here the remote‐adding & push outputs
+PS C:\Users\manue> wsl
+manou@DESKTOP-O7NNAMU:/mnt/c/Users/manue$ cd ~/projet-git
+manou@DESKTOP-O7NNAMU:~/projet-git$ git remote add origin-ssh sshuser@192.168.0.101:/mnt/c/Users/sshuser/repos/myproject
+.git
+manou@DESKTOP-O7NNAMU:~/projet-git$ git push origin-ssh main
+sshuser@192.168.0.101's password:
+manou@DESKTOP-O7NNAMU:~/projet-git$ git remote remove github
+git remote remove gitlab
+manou@DESKTOP-O7NNAMU:~/projet-git$ git remote add github git@github.com:ManoellaKouam/myproject-gh.git
+git remote add gitlab git@gitlab.thga.de:michelle.kouam-wogaing/myproject-gl.git
+manou@DESKTOP-O7NNAMU:~/projet-git$ git push github main
+git push gitlab main
 ```
 
 ---
