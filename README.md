@@ -32,7 +32,7 @@ In this exercise you will:
 
 ## Tasks
 
-### Task 1: Local Git – Branching & Merging
+### Task 111: Local Git – Branching & Merging
 
 1. Create a new directory in your home directory and initialize a repository in it. 
 2. In one of your cloned repos, initialize a new branch called `feature-1`.
@@ -49,7 +49,7 @@ In this exercise you will:
 
 ---
 
-### Task 2: Bare Repository on an SSH Server
+### Task 222: Bare Repository on an SSH Server
 
 1. On your SSH server (e.g., “vorlesungsserver”), create a **bare** repo at `~/repos/myproject.git`:
 
@@ -72,7 +72,7 @@ In this exercise you will:
 
 ---
 
-### Task 3: GitHub & THGA GitLab
+### Task 333: GitHub & THGA GitLab
 
 1. On [GitHub](github.com), create a new empty repo under your account named `myproject-gh`.
 2. On [THGA GitLab](gitlab.thga.de), create a new project named `myproject-gl`.
@@ -94,7 +94,7 @@ In this exercise you will:
 
 ---
 
-### Task 4: Fork, Modify, and Pull/Merge Request
+### Task 444: Fork, Modify, and Pull/Merge Request
 
 1. On GitHub, **fork** one of the repos from the STEMgraph org.
 2. Clone your fork locally, create a branch `pp5-changes`, and make a small change (e.g., update the README).
